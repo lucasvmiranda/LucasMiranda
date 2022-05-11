@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/dist/SimpleLineIcons';
-import { Titles, Container, AreaSlider, AreaProducts, ShareButton, TextShareButton, TextCheckoutButton, AreaBottom, AreaButtom, CheckoutButton, Price, Description, About } from './style';
+import { Titles, Container, AreaSlider, AreaProducts, ShareButton, TextShareButton, TextCheckoutButton, AreaBottom, AreaButtom, CheckoutButton, Price, Description, TitlePriceAndAbout } from './style';
 import { Col, Grid } from "react-native-easy-grid";
 import { SliderBox } from "react-native-image-slider-box";
 import { useNavigation } from '@react-navigation/native';
@@ -43,17 +43,16 @@ export function Product() {
 
               backgroundColor: "rgba(128, 128, 128, 0.92)"
             }}
-
             ImageComponentStyle={{ borderRadius: 15, width: '86%', marginTop: 5, marginLeft: -45 }}
             imageLoadingColor="#2196F3"
           />
 
         </AreaSlider>
 
-        <About>Price:</About>
+        <TitlePriceAndAbout>Price:</TitlePriceAndAbout>
         <Price>$ 1,519.99</Price>
         <AreaProducts>
-          <About>About this item:</About>
+          <TitlePriceAndAbout>About this item:</TitlePriceAndAbout>
           <Description>
             1.8 GHz Intel Core i7-10510U Quad-Core Processor
             16GB of DDR4 RAM | 512GB SSD

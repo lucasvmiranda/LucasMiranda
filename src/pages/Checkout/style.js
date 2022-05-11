@@ -12,7 +12,7 @@ export const Container = styled.View`
 export const Titles = styled.Text`
     font-size:30px;
     color:#2E3746;
-    font-weight: bold;
+    font-family: 'Roboto-Bold';
     margin-top:20px;
 `;
 
@@ -20,6 +20,7 @@ export const Description = styled.Text`
     font-size:14px;
     color:#2E3746;
     text-align:center;
+    font-family: 'Roboto-Regular';
     margin-top:20px;
 `;
 
@@ -35,33 +36,9 @@ export const CheckoutButton =styled.TouchableOpacity`
 
 export const TextCheckoutButton = styled.Text`
     font-size:12px;
-    font-weight: bold;
+    font-family: 'Roboto-Black';
     line-height: 14.06px;
     color: white;
     margin-right:10px;
-`;
-
-export const AreaCategories = styled.View`
-    width:100%;
-    height:100px;
-    background: white ;
-    margin-top: 10px;
-`;
-
-export const AreaSlider = styled.View`
-`;
-
-export const AreaProducts = styled.View`
-    width:100%;
-    height:190px;
-    background: #5A6476 ;
-    margin-bottom: 0px;
-`;
-
-export const CardProduct = styled.View`
-    width:33%;
-    height:135px;
-    border-radius: 10px;
-    background-color:white;
 `;
 

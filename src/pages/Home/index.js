@@ -1,20 +1,17 @@
 import React from 'react';
-import { Titles, Container, AreaSlider, AreaProducts, CardProduct, AreaCategories, ImageCard, ValueProduct, TitleProduct, Categorie } from './style';
-import { Text, Image } from 'react-native';
+import { Titles, Container, AreaSlider, AreaProducts, CardProduct, AreaCategories, TitleCategories, ImageCard, ValueProduct, TitleProduct, Categorie } from './style';
+import { Image } from 'react-native';
 import { Grid } from "react-native-easy-grid";
 import { SliderBox } from "react-native-image-slider-box";
 import { useNavigation } from '@react-navigation/native';
-
 
 import Img1 from '../../assets/images/IconsItem/Apparel.png';
 import Img2 from '../../assets/images/IconsItem/Beauty.png';
 import Img3 from '../../assets/images/IconsItem/Shoes.png';
 import Img4 from '../../assets/images/IconsItem/All.png';
-
 import Product1 from '../../assets/images/Products/product1.png';
 import Product2 from '../../assets/images/Products/product2.png';
 import Product3 from '../../assets/images/Products/product3.png';
-
 import Banner1 from '../../assets/images/Banners/banner_1.png';
 import Banner2 from '../../assets/images/Banners/banner_2.png';
 
@@ -32,22 +29,22 @@ export function Home() {
 
           <Categorie onPress={() => alert('Apparel')}>
             <Image source={Img1} />
-            <Text style={{ textAlign: 'center', marginTop: 5, color:'black'}}>Apparel</Text>
+            <TitleCategories>Apparel</TitleCategories>
           </Categorie>
 
           <Categorie onPress={() => alert('Beauty')}>
             <Image source={Img2} />
-            <Text style={{ textAlign: 'center', marginTop: 5, color:'black'}}>Beauty</Text>
+            <TitleCategories>Beauty</TitleCategories>
           </Categorie>
 
           <Categorie onPress={() => alert('Shoes')}>
             <Image source={Img3} />
-            <Text style={{ textAlign: 'center', marginTop: 5, color:'black'}}>Shoes</Text>
+            <TitleCategories>Shoes</TitleCategories>
           </Categorie>
 
           <Categorie onPress={() => alert('See All')}>
             <Image source={Img4} />
-            <Text style={{ textAlign: 'center', marginTop: 5, color:'black'}}>See All</Text>
+            <TitleCategories>See All</TitleCategories>
           </Categorie>
 
         </Grid>

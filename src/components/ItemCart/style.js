@@ -35,11 +35,12 @@ export const TitleProduct = styled.Text`
     font-size:11px;
     line-height: 12.89px;
     color:black;
+    font-family: 'Roboto-Regular';
 `;
 
 export const TitlePrice = styled.Text`
     font-size:14px;
-    font-weight: bold;
+    font-family: 'Roboto-Bold';
     line-height: 16.41px;
     color:black;
 `;

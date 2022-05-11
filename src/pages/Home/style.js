@@ -54,13 +54,21 @@ export const TitleProduct = styled.Text`
     line-height:10.55px;
     margin-bottom:5px;
     color: black;
+    font-family: 'Roboto-Medium';
     
 `;
 
 export const ValueProduct = styled.Text`
     font-size:11px;
     line-height:12.89px;
-    font-weight: bold;
+    font-family: 'Roboto-Bold';
     text-align:left;
     color: black;
+`;
+
+
+export const TitleCategories = styled.Text`
+text-align: center;
+ margin-top: 5;
+ color: #2E3746;
 `;
