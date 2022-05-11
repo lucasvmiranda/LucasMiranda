@@ -9,7 +9,6 @@ export const Container = styled.ScrollView`
 export const Titles = styled.Text`
     font-size:30px;
     color:#2E3746;
-  
     font-family: 'Roboto-Bold';
 `;
 
