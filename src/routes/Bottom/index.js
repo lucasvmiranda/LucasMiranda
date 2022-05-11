@@ -59,15 +59,13 @@ export default Bottom = () => {
 
       <Tab.Screen name="Search" component={Empty}
         options={{
-          headerTitle: (props) => <LogoTitle {...props} />, headerRight: () => (
-            <Grid style={{ height: 60, width: 90, justifyContent: 'center', marginRight: 1, padding: 20 }}>
-              <TouchableOpacity style={{ marginRight: 20 }}
-                onPress={() => alert('Sorry, no page!')}
-              ><Icon name="bubble" size={20} color={'white'} /></TouchableOpacity>
+          headerTitle: (props) => <LogoTitle {...props} />, headerTitleAlign: 'center' ,  headerLeft: () => (
+            <View style={{ marginLeft: 20, width: 70 }}>
               <TouchableOpacity
-                onPress={() => alert('No Notifications!')}
-              ><Icon name="bell" size={20} color={'white'} /></TouchableOpacity>
-            </Grid>
+                onPress={() => alert('Sorry, no page!')}
+              ><Icon name="arrow-left" size={20} color={'white'} /></TouchableOpacity>
+            </View>
+
           ), tabBarIcon: ({ size, color }) => {
             return <Icon name="magnifier" size={size} color={color} />
           }
@@ -105,19 +103,19 @@ export default Bottom = () => {
       />
 
       <Tab.Screen name="More" component={Empty}
-        options={{
-          headerTitle: (props) => <LogoTitle {...props} />, headerLeft: () => (
-            <View style={{ marginLeft: 20, width: 70 }}>
-              <TouchableOpacity
-                onPress={() => alert('Sorry, no page!')}
-              ><Icon name="arrow-left" size={20} color={'white'} /></TouchableOpacity>
-            </View>
+       options={{
+        headerTitle: (props) => <LogoTitle {...props} />, headerTitleAlign: 'center' ,  headerLeft: () => (
+          <View style={{ marginLeft: 20, width: 70 }}>
+            <TouchableOpacity
+              onPress={() => alert('Sorry, no page!')}
+            ><Icon name="arrow-left" size={20} color={'white'} /></TouchableOpacity>
+          </View>
 
-          ), tabBarIcon: ({ size, color }) => {
-            return <Icon name="menu" size={size} color={color} />
-          }
-        }}
-      />
+        ), tabBarIcon: ({ size, color }) => {
+          return <Icon name="menu" size={size} color={color} />
+        }
+      }}
+    />
 
     </Tab.Navigator>
 

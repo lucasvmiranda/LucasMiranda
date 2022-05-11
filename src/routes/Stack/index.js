@@ -27,7 +27,7 @@ export default Stack = () => {
 
       <Screen name="Bottom" component={Bottom} options={{ headerShown: false }} />
       <Screen name="Product" component={Product} options={{
-        headerTitle: (props) => <LogoTitle {...props} />, headerTintColor: 'white', headerStyle: { backgroundColor: '#2E3746' }, headerRight: () => (
+        headerTitle: (props) => <LogoTitle {...props} />, headerTintColor: 'white', headerStyle: { backgroundColor: '#2E3746' }, headerTitleAlign: 'center' , headerRight: () => (
 
           <TouchableOpacity style={{ marginRight: 20 }}
             onPress={() => navigation.navigate('Cart')}
